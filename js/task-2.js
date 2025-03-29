@@ -1,12 +1,14 @@
-// task-2.js
-
 function makeArray(firstArray, secondArray, maxLength) {
-  const newArray = firstArray.concat(secondArray);
-  if (newArray.length > maxLength) {
-    newArray.length = maxLength;
-  }
-  return newArray;
+
+    const array = firstArray.concat(secondArray);
+
+    if (array.length > maxLength)
+    {
+        array.length = maxLength;
+    }
+    return array;
 }
+
 
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
 console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]

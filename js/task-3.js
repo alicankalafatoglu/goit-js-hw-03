@@ -1,16 +1,15 @@
-// task-3.js
-
 function filterArray(numbers, value) {
-  const newArray = [];
-
-  for (const number of numbers) {
-    if (number > value) {
-      newArray.push(number);
+    const array = [];
+  
+    for (const number of numbers) {
+      if (number > value) {
+        array.push(number);
+      }
     }
+  
+    return array;
   }
-
-  return newArray;
-}
+  
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
